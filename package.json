@@ -1,0 +1,20 @@
+{
+  "name": "tendie_api-gql-ts",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./dist/index.js",
+    "watch": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.4",
+    "apollo-server": "^2.8.1",
+    "graphql": "^14.4.2",
+    "graphql-import": "^0.7.1",
+    "sequelize": "^5.15.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
