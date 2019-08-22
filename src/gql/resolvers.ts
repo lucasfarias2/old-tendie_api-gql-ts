@@ -1,16 +1,7 @@
-const posts = [
-  {
-    title: "Harry Potter and the Chamber of Secrets",
-    author: "J.K. Rowling",
-  },
-  {
-    title: "Jurassic Park",
-    author: "Michael Crichton",
-  },
-];
+import { Post } from "../db/models";
 
 export default {
   Query: {
-    posts: () => posts,
+    posts: () => Post.findAll(),
   },
 };
