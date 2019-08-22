@@ -13,6 +13,9 @@
     "apollo-server": "^2.8.1",
     "graphql": "^14.4.2",
     "graphql-import": "^0.7.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "pg-native": "^3.0.0",
     "sequelize": "^5.15.1",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
