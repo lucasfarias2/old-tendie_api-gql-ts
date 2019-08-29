@@ -15,3 +15,20 @@ export const Post = db.define("post", {
     allowNull: false,
   },
 });
+
+export const User = db.define("user", {
+  email: {
+    type: STRING,
+    allowNull: false,
+    unique: true,
+  },
+  username: {
+    type: STRING,
+    allowNull: false,
+    unique: true,
+  },
+  name: {
+    type: STRING,
+    allowNull: false,
+  },
+});

@@ -7,9 +7,9 @@ type Post {
 
 type User {
   id: ID!
+  email: String!
   username: String!
   name: String!
-  email: String!
 }
 
 type Query {

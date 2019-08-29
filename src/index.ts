@@ -1,7 +1,7 @@
 import { ApolloServer } from "apollo-server";
 import { importSchema } from "graphql-import";
 import db from "./db/db";
-import { Post } from "./db/models";
+import { User } from "./db/models";
 import resolvers from "./gql/resolvers";
 
 const server = new ApolloServer({ typeDefs: importSchema("./src/gql/schema.graphql"), resolvers });
@@ -11,10 +11,15 @@ db.sync().then(() => {
     // tslint:disable-next-line: no-console
     console.log(`Server running at ${url}`);
 
-    Post.create({
-      title: `Testing post ${Math.random()}`,
-      text: "Testing post text",
-      author: "Lucas Farias",
+    // Post.create({
+    //   title: `Testing post ${Math.random()}`,
+    //   text: "Testing post text",
+    //   author: "Lucas Farias",
+    // });
+    User.create({
+      email: `user${Math.random()}@gmail.com`,
+      username: `greatuser_${Math.random()}`,
+      name: "Lucas Farias",
     });
   });
 });
